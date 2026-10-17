@@ -1,0 +1,511 @@
+.who-can-join {
+  width: 100%;
+  padding-block: 35px;
+  background-color: #fff9fc;
+}
+
+.join-container {
+  width: 100%;
+  max-width: 1100px;
+  padding-inline: 16px;
+}
+
+.join-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 72px;
+  margin: 0 0 24px;
+  padding: 18px 16px;
+  border-radius: 12px;
+  background-color: #a50058;
+  color: #fff;
+  box-shadow: 0 4px 14px rgb(165 0 88 / 12%);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.join-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.join-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+  min-height: 76px;
+  padding: 16px 18px;
+  border: 1px solid #f2dce7;
+  border-radius: 12px;
+  background-color: #fffafc;
+  color: #333;
+  box-shadow: 0 3px 12px rgb(75 24 49 / 4%);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.join-icon {
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  color: #a50058;
+}
+
+.join-icon-green {
+  color: #14532d;
+}
+
+@media (hover: hover) {
+  .join-item:hover {
+    transform: translateY(-3px);
+    border-color: #a50058;
+    box-shadow: 0 7px 18px rgb(165 0 88 / 10%);
+  }
+}
+
+@media (min-width: 768px) {
+  .who-can-join {
+    padding-block: 60px;
+  }
+
+  .join-heading {
+    font-size: 30px;
+  }
+
+  .join-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .join-item {
+    padding: 18px 22px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .join-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .join-item {
+    grid-column: span 2;
+  }
+
+  .join-item:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+
+  .join-item:nth-child(5) {
+    grid-column: 4 / span 2;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .join-item {
+    transition: none;
+  }
+
+  .join-item:hover {
+    transform: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.site-header {
+  background-color: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.site-navbar {
+  padding-block: 12px;
+}
+
+.site-navbar .navbar-brand {
+  margin-right: 12px;
+  color: #183e32;
+  font-size: 18px;
+  font-weight: 700;
+  white-space: normal;
+  max-width: calc(100% - 72px);
+}
+
+.site-navbar .navbar-toggler {
+  width: 48px;
+  height: 44px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.site-navbar .navbar-nav {
+  padding-top: 12px;
+}
+
+.site-navbar .nav-link {
+  padding: 12px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link.active {
+  color: #176349;
+}
+
+.site-navbar a:focus-visible,
+.site-navbar .navbar-toggler:focus-visible {
+  outline: 2px solid #176349;
+  outline-offset: 4px;
+}
+
+@media (min-width: 992px) {
+  .site-navbar .navbar-nav {
+    gap: 16px;
+    padding-top: 0;
+  }
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.yoga-benefits {
+  width: 100%;
+  padding-block: 35px;
+  background-color: #fafbf6;
+}
+
+.yoga-benefits-heading {
+  margin: 0 0 28px;
+  color: #14532d;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.yoga-benefits-heading::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  margin: 14px auto 0;
+  border-radius: 2px;
+  background-color: #43835a;
+}
+
+.yoga-benefits-row {
+  --bs-gutter-x: 24px;
+  --bs-gutter-y: 24px;
+}
+
+.yoga-benefits-row > * {
+  min-width: 0;
+}
+
+.yoga-benefits-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgb(20 83 45 / 10%);
+}
+
+.yoga-benefits-copy p {
+  margin: 0 0 20px;
+  color: #444;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.yoga-benefits-copy p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .yoga-benefits {
+    padding-block: 70px;
+  }
+
+  .yoga-benefits-heading {
+    margin-bottom: 40px;
+    font-size: 36px;
+  }
+
+  .yoga-benefits-row {
+    --bs-gutter-x: 40px;
+  }
+
+  .yoga-benefits-copy p {
+    font-size: 17px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .yoga-benefits.is-visible .yoga-benefits-heading,
+  .yoga-benefits.is-visible .yoga-benefits-row > * {
+    animation: yoga-benefits-enter 600ms ease both;
+  }
+
+  .yoga-benefits.is-visible .yoga-benefits-copy {
+    animation-delay: 100ms;
+  }
+
+  @keyframes yoga-benefits-enter {
+    from {
+      opacity: 0.85;
+      transform: translateY(12px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.yoga-images {
+  padding-top: 8px;
+  padding-bottom: 24px;
+  background-color: #fff;
+}
+
+.yoga-images-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: center;
+}
+
+.yoga-images-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .yoga-images {
+    padding-top: 12px;
+    padding-bottom: 40px;
+  }
+
+  .yoga-images-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 32px;
+  }
+}
+
+.batch-timings {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #faf8f1;
+  color: #24523d;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.batch-timings *,
+.batch-timings *::before,
+.batch-timings *::after {
+  box-sizing: border-box;
+}
+
+.batch-timings-header {
+  position: relative;
+  z-index: 1;
+  padding: 22px 20px;
+  background: #214d38;
+}
+
+.batch-timings-header h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.batch-timings-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 28px 24px;
+}
+
+.batch-timings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.batch-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 24px 16px;
+  border: 1px solid #d8e2d4;
+  border-radius: 8px;
+  background: #fffefa;
+  box-shadow: 0 4px 16px rgb(33 77 56 / 6%);
+}
+
+.batch-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
+  color: #427353;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.batch-card h3 {
+  margin: 0 0 14px;
+  color: #24523d;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.batch-time {
+  margin: 0;
+  color: #a32262;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.batch-or {
+  margin: 4px 0;
+  color: #64715c;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.batch-note {
+  margin: 20px 0 0;
+  color: #53624f;
+  font-size: 16px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.batch-leaves {
+  position: absolute;
+  width: 110px;
+  height: 160px;
+  pointer-events: none;
+  opacity: 0.12;
+}
+
+.batch-leaves::before,
+.batch-leaves::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 100px;
+  border-radius: 0 100% 0 100%;
+  background: #427353;
+  transform: rotate(-25deg);
+}
+
+.batch-leaves::after {
+  top: 45px;
+  left: 46px;
+  transform: rotate(25deg);
+}
+
+.batch-leaves-left {
+  top: 100px;
+  left: -20px;
+}
+
+.batch-leaves-right {
+  right: -20px;
+  bottom: -10px;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 767px) {
+  .batch-timings-header {
+    padding: 18px 16px;
+  }
+
+  .batch-timings-header h2 {
+    font-size: 28px;
+  }
+
+  .batch-timings-content {
+    padding: 20px 16px;
+  }
+
+  .batch-timings-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .batch-card {
+    padding: 20px 12px;
+  }
+
+  .batch-card h3 {
+    font-size: 21px;
+  }
+
+  .batch-time {
+    font-size: 24px;
+  }
+
+  .batch-note {
+    margin-top: 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 359px) {
+  .batch-time {
+    font-size: 20px;
+  }
+}
