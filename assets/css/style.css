@@ -710,3 +710,123 @@ body {
     font-size: 20px;
   }
 }
+
+
+
+/* ===================================
+   YOGA EXPERTISE - WATERCOLOR THEME
+=================================== */
+
+.yoga-expertise-section {
+    background: #fcf9f3;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Section Heading */
+.expertise-subtitle {
+    color: #a56c98;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.expertise-heading {
+    color: #713d58;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.expertise-heading span {
+    color: #cd6978;
+}
+
+.expertise-intro {
+    color: #866f77;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Cards */
+.expertise-card {
+    background: #fff7f3;
+    border: 1px solid #f3dbd9;
+    border-radius: 18px;
+    padding: 45px 25px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.35s ease;
+    box-shadow: 0 5px 25px rgba(168, 89, 109, 0.06);
+}
+
+/* Icon Circle */
+.expertise-icon {
+    width: 85px;
+    height: 85px;
+    background: #f9e1dc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    transition: all 0.35s ease;
+}
+
+.expertise-icon i {
+    font-size: 35px;
+    color: #c96879;
+    transition: all 0.35s ease;
+}
+
+/* Card Titles */
+.expertise-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #713d58;
+    margin-bottom: 15px;
+}
+
+/* Card Description */
+.expertise-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #866f77;
+    margin-bottom: 0;
+}
+
+/* Hover Effects */
+.expertise-card:hover {
+    transform: translateY(-10px);
+    background: #fff0ed;
+    border-color: #e7b2bd;
+    box-shadow: 0 15px 35px rgba(168, 89, 109, 0.13);
+}
+
+.expertise-card:hover .expertise-icon {
+    background: #c96879;
+}
+
+.expertise-card:hover .expertise-icon i {
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .expertise-heading {
+        font-size: 27px;
+    }
+
+    .expertise-card {
+        padding: 35px 22px;
+    }
+
+    .expertise-card h3 {
+        font-size: 18px;
+    }
+
+    .expertise-icon {
+        width: 75px;
+        height: 75px;
+    }
+}
